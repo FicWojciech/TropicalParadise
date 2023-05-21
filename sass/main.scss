@@ -24,10 +24,10 @@ body {
 	top: 20px;
 	right: 20px;
 	padding: 1em;
-	background: red;
+	background: none;
 	border: 1px solid transparent;
 	cursor: pointer;
-	z-index: 100;
+	z-index: 1000;
 	&:focus {
 		outline: none;
 		border: 1px solid rgba(255, 255, 255, 0.5);
@@ -138,6 +138,19 @@ body {
 			background-color: $light-white;
 		}
 	}
+}
+
+@keyframes navItemsAnimation {
+	from {
+		transform: translateX(200%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.nav-items-animation {
+	animation: navItemsAnimation 1s both;
 }
 
 // media //
