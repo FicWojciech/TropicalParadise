@@ -1,4 +1,4 @@
-@use './color';
+@import './color';
 @import './mixins';
 @import './components';
 *,
@@ -93,12 +93,12 @@ body {
 			left: 0;
 			width: 3px;
 			height: 100%;
-			transform: scale(0);
+			transform: scaleY(0);
 			transition: transform 0.4s;
 			background-color: $pure-white;
 		}
 		&:hover::before {
-			transform: scale(1);
+			transform: scaleY(1);
 		}
 	}
 }
@@ -178,7 +178,7 @@ body {
 		right: 50px;
 	}
 	.header {
-		background-image: $blue-gradient, url('/img/palms-large.jpg');
+		background-image: $blue-gradient, url('../img/palms-large.jpg');
 		&__heading {
 			font-size: 10rem;
 		}
