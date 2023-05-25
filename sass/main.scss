@@ -1,5 +1,5 @@
-@import './color';
 @import './mixins';
+@import './color';
 @import './components';
 *,
 ::before,
@@ -151,7 +151,9 @@ body {
 
 .nav-items-animation {
 	animation: navItemsAnimation 1s both;
-} //MAIN//
+}
+
+//MAIN//
 //DREANS SECTION//
 .dreams {
 	&__box {
@@ -171,7 +173,52 @@ body {
 	}
 }
 
-// media //
+//hero-img//
+.hero-img {
+	position: relative;
+	padding: 10em 2em;
+	@include heroImages('/img/heroImgSmall.jpg');
+	text-align: center;
+	color: $pure-white;
+	overflow: hidden;
+	&__title {
+		font-family: 'Dancing Script', cursive;
+		font-size: 4.8rem;
+		margin-bottom: 0.5em;
+	}
+	&__text {
+		padding: 1em 0;
+	}
+}
+
+//islands //
+.islands {
+	&__card {
+		position: relative;
+		margin: 1em 0;
+		height: 450px;
+		color: $pure-white;
+		text-align: center;
+		perspective: 1000px;
+		&__img {
+			padding: 2em;
+			height: 100%;
+			border-radius: 8px;
+			background-size: cover;
+			&--first {
+				background-image: $light-blue-gradient, url('/img/boat-166738_640.jpg');
+			}
+			&--second {
+				background-image: $blue-gradient, url('/img/bora-bora-3023437_640.jpg');
+			}
+			&--third {
+				background-image: $purple-gradient, url('/img/hawaii-79928_640.jpg');
+			}
+		}
+	}
+}
+
+// MEDIA //
 @media (min-width: 576px) {
 	.dreams {
 		&__box {
@@ -193,6 +240,9 @@ body {
 		&__img {
 			margin-bottom: 0;
 			max-height: 300px;
+		}
+		&__title {
+			font-size: 2rem;
 		}
 	}
 }
@@ -220,6 +270,20 @@ body {
 		&__text {
 			font-size: 1.8rem;
 		}
+		&__title {
+			font-size: 2.4rem;
+		}
+	}
+	.hero-img {
+		padding: 30rem 2em;
+		background-image: $blue-gradient, url('/img/heroImgLarge.jpg');
+		hr {
+			margin: 0 auto;
+			width: 75%;
+		}
+		&__text {
+			font-size: 2.2rem;
+		}
 	}
 }
 
@@ -229,7 +293,7 @@ body {
 		right: 50px;
 	}
 	.header {
-		background-image: $blue-gradient, url('../img/palms-large.jpg');
+		background-image: $blue-gradient, url('/img/palms-large.jpg');
 		&__heading {
 			font-size: 10rem;
 		}
@@ -254,6 +318,16 @@ body {
 		}
 		&__text {
 			font-size: 2.2rem;
+		}
+	}
+	.hero-img {
+		padding: 40rem 2em;
+		&__title {
+			font-size: 7.2rem;
+		}
+		hr {
+			width: 60%;
+			max-width: 900px;
 		}
 	}
 }
