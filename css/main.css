@@ -273,19 +273,19 @@ body {
   text-align: center;
   perspective: 1000px;
 }
-.islands__card__img {
+.islands__card-img {
   padding: 2em;
   height: 100%;
   border-radius: 8px;
   background-size: cover;
 }
-.islands__card__img--first {
+.islands__card-img--first {
   background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("/img/boat-166738_640.jpg");
 }
-.islands__card__img--second {
-  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("/img/bora-bora-3023437_640.jpg");
+.islands__card-img--second {
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("/img/water-3354063_640.jpg");
 }
-.islands__card__img--third {
+.islands__card-img--third {
   background-image: linear-gradient(45deg, rgba(190, 10, 214, 0.75), rgba(68, 0, 255, 0.75)), url("/img/hawaii-79928_640.jpg");
 }
 
