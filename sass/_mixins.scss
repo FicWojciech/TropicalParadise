@@ -15,7 +15,7 @@
 	background-attachment: fixed;
 }
 
-@mixin positionLeft {
+@mixin islandCardStyles {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
