@@ -25,6 +25,9 @@ body {
 	width: 100%;
 	max-width: 1200px;
 }
+.white-section {
+	background-color: $pure-white;
+}
 // nawigcja
 .burger-btn {
 	position: fixed;
@@ -128,7 +131,11 @@ body {
 .nav-items-animation {
 	animation: navItemsAnimation 1s both;
 }
-
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
 // header
 .header {
 	position: relative;
@@ -663,6 +670,7 @@ body {
 	.burger-btn {
 		top: 50px;
 		right: 50px;
+		mix-blend-mode: difference;
 	}
 	.header {
 		background-image: $blue-gradient, url('/img/palms-large.jpg');
